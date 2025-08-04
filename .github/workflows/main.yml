@@ -3,7 +3,7 @@ name: Push workflow
 
 on: 
  pull_request:
-   types: opened
+   types: synchronize
  
 jobs:
   build:
