@@ -2,8 +2,10 @@ name: Push workflow
 
 
 on: 
- pull_request:
-   types: opened
+ push:
+  branches:
+    - main
+    - '! develop'
  
 jobs:
   build:
