@@ -2,7 +2,8 @@ name: Push workflow
 
 
 on: 
- workflow_dispatch
+ pull_request:
+   types: opened
  
 jobs:
   build:
